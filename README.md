@@ -1,3 +1,3 @@
 # FinalProjectI2DL
 
-# See readme.txt
+See readme.txt

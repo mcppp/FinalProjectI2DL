@@ -50,5 +50,7 @@ Running the model
 
 
 Live testing
-- For live testing, run locally .npy on your computer (to provide access to the laptop's camera). 
+- For live testing, run locally LIVEtesting.npy on your computer (to provide access to the laptop's camera). Make sure the path to load the .pth file is correct. You can download the .pth file same as above in: https://drive.google.com/file/d/1OF28TVKCJwejH5WDDdYdYYrV3ySHGtrO/view?usp=sharing
+
+
 

@@ -1,4 +1,5 @@
-# FinalProjectI2DL
+#FinalProjectI2DL
+
 This repository includes two projects with the same goal: sentiment analysis. The project based on AUDIO uses the dataset RAVDESS and the project based on IMAGE uses the dataset FER-2013. Both datasets are available to download from Kaggle.
 
 FER-2013 https://www.kaggle.com/msambare/fer2013
@@ -20,7 +21,7 @@ B) Running the model:The notebook is adapted to be used in Google colab. Comment
 
 Recommended
    1. Download AUDIO_simple.npy , feature_matrix.npy and labels.npy. 
-      (Alternatively you can download the RAVDESS dataset from Kaggle and use Extract_features.npy to create your own feature_matrix.npy and labels.npy. Make sure the downloaded dataset contains only 24 folders for the 24 actors)
+      (Alternatively you can download the RAVDESS dataset from Kaggle and use Extract_features.npy to create your own feature_matrix.npy and labels.npy. Make sure the downloaded dataset contains only 24 folders for the 24 actors, please delete any extra folders)
   
    2. Run AUDIO_simple.npy : it loads the feature_matrix.npy and labels.npy, trains the model and reports performance by showing accuracy and confussion matrix based on the    unseen test set. Training is fast. 
 
@@ -38,20 +39,25 @@ This project has been done using the Google Cloud, since Google Colab is too slo
 
 
 
-Running the model
+A) Running the model
 
-     Recomended
+    Recommended (without training)
     - Download FER-2013 dataset. Make sure the paths in the notebook IMAGE_project.npy are correct before you run. 
-    - Training is time-consuming. I recommend loading the saved face_sentiment_best_new2.pth and running the model to see confussion matrix and accuracy results based on the test set. You can download the .pth file in : https://drive.google.com/file/d/1OF28TVKCJwejH5WDDdYdYYrV3ySHGtrO/view?usp=sharing
+    - Training is time-consuming. 
+      I recommend loading the saved face_11.pth and running the model to see confussion matrix and accuracy results based on the test set. 
+      You can download the .pth file in : https://drive.google.com/file/d/1-p0U14Yj0q3GMCdrkw7O5gYDDctLUajw/view?usp=sharing
+      Make sure the path in cell #18 is correct -> now you can run the notebook
 
 
-      Alternative
-      - If you want to train, uncomment cell # and comment cell # out .  
+    Alternative (training it yourself)
+      - If you want to train the model yourself, uncomment cell #17 and comment cell #18 out . Now you can run the notebook. 
+        You can stop the training after any validation round. 
+        If you stop it between train and validation rounds, the code that prints validation vs. training accuracy curve will not work.
 
 
 
-Live testing
-- For live testing, run locally LIVEtesting.npy on your computer (to provide access to the laptop's camera). Make sure the path to load the .pth file is correct. You can download the .pth file same as above in: https://drive.google.com/file/d/1OF28TVKCJwejH5WDDdYdYYrV3ySHGtrO/view?usp=sharing
+B) Live testing
+- For live testing, run locally LIVEtesting.npy on your computer (to provide access to the laptop's camera). Make sure the path to load the face_11.pth file is correct. You can download the .pth file same way as above in: https://drive.google.com/file/d/1-p0U14Yj0q3GMCdrkw7O5gYDDctLUajw/view?usp=sharing
 
 
 
